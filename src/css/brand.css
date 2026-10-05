@@ -1,0 +1,199 @@
+:root {
+  /* --- 1. Paleta de Marca e Institucional --- */
+  --clc-color-primary: #1f3864; /* Azul corporativo: cabeceras, identidad, bordes activos */
+  --clc-color-primary-dark: #142543; /* Azul profundo: barra superior de utilidades / Two-tier */
+  --clc-color-action: #7cb342; /* Verde de acción: botones "Guardar", "Nueva Venta", emisión */
+  --clc-color-action-hover: #689f38; /* Verde interacción: hover y active */
+  --clc-color-alert: #c62828; /* Rojo de alerta: stock = 0, cancelación, errores */
+  --clc-color-brand-light: #a5d6a7; /* Verde claro: subtítulos de marca sobre fondos oscuros */
+
+  /* --- 2. Tipografía y Jerarquía de Texto --- */
+  --clc-font-family: Arial, Helvetica, sans-serif;
+  --clc-text-primary: #1b1b1f; /* Texto principal, títulos de tarjetas y encabezados */
+  --clc-text-secondary: #1f2937; /* Texto de lectura, etiquetas de formulario */
+  --clc-text-muted: #64748b; /* Texto atenuado / subtítulos / breadcrumbs (.text-muted) */
+  --clc-text-muted-light: #6b7280; /* Texto atenuado secundario / pies de página / marcas de tiempo */
+  --clc-text-outline: #73777f; /* Texto de soporte para íconos y encabezados de tabla */
+  --clc-text-inverse: #ffffff; /* Texto blanco sobre azul corporativo o botones de acción */
+
+  /* --- 3. Superficies, Fondos y Contenedores --- */
+  --clc-bg-body: #f8fafc; /* Fondo general de la aplicación */
+  --clc-bg-surface: #ffffff; /* Fondo de tarjetas, tablas, modales e inputs */
+  --clc-bg-subtle: #f1f5f9; /* Fondo de cabeceras de tablas y campos de solo lectura */
+  --clc-bg-warning-tint: #fff9c4; /* Fondo tenue para avisos y advertencias de stock */
+
+  /* --- 4. Bordes y Separadores --- */
+  --clc-border-subtle: #e2e8f0; /* Líneas divisorias de tablas y bordes de tarjetas */
+  --clc-border-medium: #cbd5e1; /* Bordes de inputs e inputs de selección */
+  --clc-border-focus: #1f3864; /* Anillo de foco accesible para controles de formulario */
+
+  /* --- 5. Mapeo Directo a Variables Nativas de Bootstrap 5 --- */
+  --bs-primary: var(--clc-color-primary);
+  --bs-success: var(--clc-color-action);
+  --bs-danger: var(--clc-color-alert);
+  --bs-body-font-family: var(--clc-font-family);
+  --bs-body-color: var(--clc-text-primary);
+  --bs-body-bg: var(--clc-bg-body);
+  --bs-body-bg-footer: var(--clc-bg-subtle);
+  --bs-secondary-color: var(--clc-text-muted);
+  --bs-border-color: var(--clc-border-subtle);
+  --bs-text-primary: var(--clc-text-primary);
+  --bs-text-muted: var(--clc-text-muted);
+}
+
+body {
+  color: var(--bs-primary) !important;
+  font-family: var(--bs-body-font-family) !important;
+  background-color: var(--bs-body-bg) !important;
+}
+
+footer {
+  background-color: var(--clc-bg-subtle) !important;
+  border-color: var(--clc-bg-subtle) !important;
+  color: var(--bs-text-primary);
+}
+
+/* Clases utilitarias del proyecto */
+.text-bs-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-bs-muted {
+  color: var(--bs-secondary-color) !important;
+}
+
+.text-clc-muted {
+  color: var(--bs-secondary-color) !important;
+}
+
+.text-clc-muted-light {
+  color: var(--clc-text-muted-light) !important;
+}
+
+.text-clc-surface {
+  color: var(--clc-bg-surface) !important;
+}
+
+.bg-clc-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.text-clc-success {
+  color: var(--bs-success) !important;
+}
+
+.btn-clc-action {
+  background-color: var(--bs-success) !important;
+  color: var(--clc-text-inverse);
+  border: none;
+}
+
+.btn-clc-action:hover {
+  background-color: var(--clc-color-action-hover);
+  color: var(--clc-text-inverse);
+}
+
+.bg-custom-primary {
+  background-color: var(--clc-color-primary) !important;
+  border-color: var(--clc-color-primary) !important;
+}
+
+.text-custom-primary {
+  color: var(--clc-color-primary) !important;
+}
+
+.bg-custom-secondary {
+  background-color: var(--clc-color-action) !important;
+  border-color: var(--clc-color-action) !important;
+}
+
+.text-custom-secondary {
+  color: var(--clc-text-secondary) !important;
+}
+
+.btn-custom-action {
+  background-color: var(--clc-bg-surface) !important;
+  border-color: var(--clc-bg-surface) !important;
+}
+
+.text-custom-border {
+  color: var(--bs-border-color) !important;
+}
+
+.border-clc-muted {
+  border-color: var(--clc-text-muted) !important;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.article-custom {
+  border: 1px solid !important;
+  border-width: 1px !important;
+  border-left-width: 0.5rem !important;
+  border-top-left-radius: 1rem !important;
+  border-bottom-left-radius: 1rem !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.article-custom[data-color="primary"] {
+  border-color: var(--clc-border-subtle) var(--clc-border-subtle)
+    var(--clc-border-subtle) var(--bs-primary) !important;
+}
+
+.article-custom[data-color="action"] {
+  border-color: var(--clc-border-subtle) var(--clc-border-subtle)
+    var(--clc-border-subtle) var(--bs-success) !important;
+}
+
+.article-custom[data-color="primary"]:hover {
+  background-color: var(--clc-color-primary-dark) !important;
+  border-left-color: var(--clc-color-primary-dark) !important;
+}
+
+.article-custom[data-color="action"]:hover {
+  background-color: var(--clc-color-brand-light) !important;
+  border-left-color: var(--clc-color-brand-light) !important;
+}
+
+@media (max-width: 768px) {
+  .btn-custom-action {
+    background-color: var(--clc-color-alert) !important;
+    border-color: var(--clc-color-alert) !important;
+  }
+  .btn-custom-action:hover {
+    background-color: var(--clc-color-alert) !important;
+    border-color: var(--clc-color-alert) !important;
+  }
+  .btn-custom-action > span {
+    color: var(--clc-text-inverse) !important;
+  }
+  .btn-custom-action > svg {
+    stroke: var(--clc-text-inverse) !important;
+  }
+}
+
+@media (min-width: 990px) {
+  .icon-custom {
+    font-size: 1rem !important;
+  }
+  .header-system > h1 {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+  }
+  .header-system > p {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-system > h1 {
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+  }
+  .header-system > p {
+    font-size: 0.9rem !important;
+  }
+}

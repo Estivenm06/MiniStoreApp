@@ -1,0 +1,16 @@
+@import "./brand.css";
+
+div > p span {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+div > p span.fw-bold {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+div > small {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
