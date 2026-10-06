@@ -1,0 +1,192 @@
+{% extends "layout.html" %} {% block content %}
+<main class="p-5">
+  <h1 class="text-center fw-bold fs-2">Seleccione un módulo para continuar</h1>
+  <div class="p-1 bg-custom-secondary mx-auto w-25 rounded shadow-sm"></div>
+  <section class="d-grid mt-4 container-fluid">
+    <div class="row row-cols-1 row-cols-lg-2 g-4 justify-content-around">
+      <a href="/clientes"
+                class="col-12 col-lg-5 d-flex justify-content-between p-3 rounded shadow-sm flex-column anchor-custom text-decoration-none"
+          data-color="primary">
+          <header class="d-flex justify-content-between">
+            <div class="d-flex align-items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="#1f3864"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-user"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z"
+                />
+                <path
+                  d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z"
+                />
+              </svg>
+              <h1 class="fw-bolder fs-3">Clientes</h1>
+            </div>
+            <svg
+              class="opacity-75"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+          </header>
+          <main class="d-flex">
+            <p class="text-muted text-wrap w-50">
+              Gestión de clientes y registro de datos
+            </p>
+          </main>
+      </a>
+      <a href="/productos"
+                class="col-12 col-lg-5 d-flex justify-content-between p-3 rounded shadow-sm flex-column anchor-custom text-decoration-none"
+          data-color="action">
+          <header class="d-flex justify-content-between">
+            <div class="d-flex align-items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="#7cb342"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-archive"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M2 5a2 2 0 0 1 2 -2h16a2 2 0 0 1 2 2a2 2 0 0 1 -2 2h-16a2 2 0 0 1 -2 -2z"
+                />
+                <path
+                  d="M19 9c.513 0 .936 .463 .993 1.06l.007 .14v7.2c0 1.917 -1.249 3.484 -2.824 3.594l-.176 .006h-10c-1.598 0 -2.904 -1.499 -2.995 -3.388l-.005 -.212v-7.2c0 -.663 .448 -1.2 1 -1.2h14zm-5 2h-4l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h4l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z"
+                />
+              </svg>
+              <h1 class="fw-bolder fs-3 text-clc-success">Productos</h1>
+            </div>
+            <svg
+              opacity="75"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+          </header>
+          <main class="d-flex">
+            <p class="text-muted text-wrap w-50">Inventario y categorías</p>
+          </main>
+        </anchor>
+      </a>
+      <a href="/facturacion"
+      class="col-12 col-lg-5 d-flex justify-content-between p-3 rounded shadow-sm flex-column anchor-custom text-decoration-none"
+          data-color="action">
+          <header class="d-flex justify-content-between">
+            <div class="d-flex align-items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="#7cb342"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-file-invoice"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm4 15h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0 -2m0 -4h-8a1 1 0 0 0 0 2h8a1 1 0 0 0 0 -2m-7 -7h-1a1 1 0 1 0 0 2h1a1 1 0 1 0 0 -2"
+                />
+                <path d="M19 7h-4l-.001 -4.001z" />
+              </svg>
+              <h1 class="fw-bolder fs-3 text-clc-success">Facturación</h1>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+          </header>
+          <main class="d-flex">
+            <p class="text-muted text-wrap w-50">
+              Registro de ventas y facturas
+            </p>
+          </main>
+      </a>
+      <a href="/reportes" 
+      class="col-12 col-lg-5 d-flex justify-content-between p-3 rounded shadow-sm flex-column anchor-custom text-decoration-none" data-color="primary" target="_blank">
+          <header class="d-flex justify-content-between">
+            <div class="d-flex align-items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="#1f3864"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-report-analytics"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M17.997 4.17a3 3 0 0 1 2.003 2.83v12a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 2.003 -2.83a4 4 0 0 0 3.997 3.83h4a4 4 0 0 0 3.98 -3.597zm-8.997 6.83a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m3 4a1 1 0 0 0 -1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0 -1 -1m3 -2a1 1 0 0 0 -1 1v3a1 1 0 0 0 2 0v-3a1 1 0 0 0 -1 -1m-1 -11a2 2 0 1 1 0 4h-4a2 2 0 1 1 0 -4z"
+                />
+              </svg>
+              <h1 class="fw-bolder fs-3">Reportes</h1>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+          </header>
+          <main class="d-flex">
+            <p class="text-muted text-wrap w-50">Consultas e informes</p>
+          </main>
+      </a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

@@ -2,6 +2,7 @@
   /* --- 1. Paleta de Marca e Institucional --- */
   --clc-color-primary: #1f3864; /* Azul corporativo: cabeceras, identidad, bordes activos */
   --clc-color-primary-dark: #142543; /* Azul profundo: barra superior de utilidades / Two-tier */
+  --clc-color-primary-light: #7a8be7; /* Azul claro: hover y active de botones de acción */
   --clc-color-action: #7cb342; /* Verde de acción: botones "Guardar", "Nueva Venta", emisión */
   --clc-color-action-hover: #689f38; /* Verde interacción: hover y active */
   --clc-color-alert: #c62828; /* Rojo de alerta: stock = 0, cancelación, errores */
@@ -39,6 +40,7 @@
   --bs-border-color: var(--clc-border-subtle);
   --bs-text-primary: var(--clc-text-primary);
   --bs-text-muted: var(--clc-text-muted);
+  --bs-text-primary-light: var(--clc-text-primary-light);
 }
 
 body {
@@ -129,7 +131,7 @@ footer {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.article-custom {
+.anchor-custom {
   border: 1px solid !important;
   border-width: 1px !important;
   border-left-width: 0.5rem !important;
@@ -138,22 +140,22 @@ footer {
   transition: all 0.2s ease-in-out !important;
 }
 
-.article-custom[data-color="primary"] {
+.anchor-custom[data-color="primary"] {
   border-color: var(--clc-border-subtle) var(--clc-border-subtle)
     var(--clc-border-subtle) var(--bs-primary) !important;
 }
 
-.article-custom[data-color="action"] {
+.anchor-custom[data-color="action"] {
   border-color: var(--clc-border-subtle) var(--clc-border-subtle)
     var(--clc-border-subtle) var(--bs-success) !important;
 }
 
-.article-custom[data-color="primary"]:hover {
-  background-color: var(--clc-color-primary-dark) !important;
-  border-left-color: var(--clc-color-primary-dark) !important;
+.anchor-custom[data-color="primary"]:hover {
+  background-color: var(--clc-color-primary-light) !important;
+  border-left-color: var(--clc-color-primary-light) !important;
 }
 
-.article-custom[data-color="action"]:hover {
+.anchor-custom[data-color="action"]:hover {
   background-color: var(--clc-color-brand-light) !important;
   border-left-color: var(--clc-color-brand-light) !important;
 }
