@@ -1,0 +1,32 @@
+body {
+  font-family: var(--bs-body-font-family);
+  background: var(--bs-body-bg);
+}
+
+main > div {
+  width: 15%;
+}
+
+.anchor-custom {
+  border: 1px solid;
+  border-width: 1px;
+  border-left-width: 0.5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.anchor-custom:hover {
+  background-color: var(--bs-secondary-bg);
+  transform: scale(1.02);
+}
+
+.anchor-custom[data-color="primary"] {
+  border-color: var(--bs-border-color) var(--bs-border-color)
+    var(--bs-border-color) var(--bs-primary);
+}
+
+.anchor-custom[data-color="action"] {
+  border-color: var(--bs-border-color) var(--bs-border-color)
+    var(--bs-border-color) var(--bs-success);
+}

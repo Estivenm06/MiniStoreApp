@@ -1,0 +1,97 @@
+@import "./header.css";
+@import "./body.css";
+@import "./footer.css";
+
+:root {
+  /* --- 1. Paleta de Marca e Institucional --- */
+  --clc-color-primary: #1f3864; /* Azul corporativo: cabeceras, identidad, bordes activos */
+  --clc-color-primary-dark: #142543; /* Azul profundo: barra superior de utilidades / Two-tier */
+  --clc-color-action: #7cb342; /* Verde de acción: botones "Guardar", "Nueva Venta", emisión */
+  --clc-color-action-hover: #689f38; /* Verde interacción: hover y active */
+  --clc-color-alert: #c62828; /* Rojo de alerta: stock = 0, cancelación, errores */
+  --clc-color-brand-light: #a5d6a7; /* Verde claro: subtítulos de marca sobre fondos oscuros */
+
+  /* --- 2. Tipografía y Jerarquía de Texto --- */
+  --clc-font-family: Arial, Helvetica, sans-serif;
+  --clc-text-primary: #1b1b1f; /* Texto principal, títulos de tarjetas y encabezados */
+  --clc-text-secondary: #1f2937; /* Texto de lectura, etiquetas de formulario */
+  --clc-text-muted: #64748b; /* Texto atenuado / subtítulos / breadcrumbs (.text-muted) */
+  --clc-text-muted-light: #6b7280; /* Texto atenuado secundario / pies de página / marcas de tiempo */
+  --clc-text-outline: #73777f; /* Texto de soporte para íconos y encabezados de tabla */
+  --clc-text-inverse: #ffffff; /* Texto blanco sobre azul corporativo o botones de acción */
+
+  /* --- 3. Superficies, Fondos y Contenedores --- */
+  --clc-bg-body: #f8fafc; /* Fondo general de la aplicación */
+  --clc-bg-surface: #ffffff; /* Fondo de tarjetas, tablas, modales e inputs */
+  --clc-bg-subtle: #f1f5f9; /* Fondo de cabeceras de tablas y campos de solo lectura */
+  --clc-bg-warning-tint: #fff9c4; /* Fondo tenue para avisos y advertencias de stock */
+
+  /* --- 4. Bordes y Separadores --- */
+  --clc-border-subtle: #e2e8f0; /* Líneas divisorias de tablas y bordes de tarjetas */
+  --clc-border-medium: #cbd5e1; /* Bordes de inputs e inputs de selección */
+  --clc-border-focus: #1f3864; /* Anillo de foco accesible para controles de formulario */
+
+  /* --- 5. Mapeo Directo a Variables Nativas de Bootstrap 5 --- */
+  --bs-primary: var(--clc-color-primary);
+  --bs-success: var(--clc-color-action);
+  --bs-danger: var(--clc-color-alert);
+  --bs-body-font-family: var(--clc-font-family);
+  --bs-body-color: var(--clc-text-primary);
+  --bs-body-bg: var(--clc-bg-body);
+  --bs-body-subtle: var(--clc-bg-subtle);
+  --bs-secondary-color: var(--clc-text-muted);
+  --bs-secondary-color-light: var(--clc-text-muted-light);
+  --bs-border-color: var(--clc-border-subtle);
+
+  --bs-text-primary: var(var(--clc-text-primary));
+  --bs-text-inverse: var(var(--clc-text-inverse));
+}
+
+/* Clases utilitarias del proyecto */
+.text-bs-primary {
+  color: var(--bs-primary);
+}
+
+.text-bs-success {
+  color: var(--bs-success);
+}
+
+.text-bs-danger {
+  color: var(--bs-danger);
+}
+
+.text-bs-muted {
+  color: var(--bs-secondary-color);
+}
+
+.text-clc-muted {
+  color: var(--bs-secondary-color);
+}
+
+.text-clc-muted-light {
+  color: var(--clc-text-muted-light);
+}
+
+.text-clc-surface {
+  color: var(--clc-bg-surface);
+}
+
+.bg-clc-primary {
+  background-color: var(--bs-primary);
+}
+
+.bg-clc-subtle {
+  background-color: var(--bs-body-subtle);
+}
+
+.bg-clc-muted-light {
+  background-color: var(--bs-secondary-color-light);
+}
+
+.bg-clc-success {
+  background-color: var(--bs-success);
+}
+
+.text-clc-success {
+  color: var(--bs-success);
+}

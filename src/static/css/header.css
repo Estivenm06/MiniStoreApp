@@ -1,0 +1,56 @@
+body > header {
+  background: var(--bs-primary);
+  color: var(--bs-text-primary);
+  box-shadow: 10px 10px 10px;
+}
+
+.btn-custom-action {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  span {
+    color: var(--bs-primary);
+    letter-spacing: 0.5px;
+  }
+  svg {
+    stroke: var(--bs-primary);
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-system > h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .header-system > p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 990px) {
+  .icon-custom {
+    font-size: 1rem;
+  }
+  .header-system > h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .header-system > p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-custom-action {
+    background-color: var(--bs-danger);
+    padding: 0.5rem;
+    span {
+      color: #fff;
+      letter-spacing: 0px;
+    }
+    svg {
+      stroke: #fff;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# MiniStoreApp
+so# MiniStoreApp
 
 This project it is in development phase and the main goal of this is the management of a story and shows here their stock and availability.
 

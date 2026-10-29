@@ -1,0 +1,6 @@
+footer {
+  background: var(--bs-body-bg-footer);
+  border-color: var(--bs-border-color);
+  border-top: 1px solid var(--bs-border-color);
+  color: var(--bs-body-color);
+}
