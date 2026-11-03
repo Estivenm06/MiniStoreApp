@@ -1,5 +1,83 @@
 {% extends "layout.html" %} {% block content %}
-<main>
-  <header><h1>Clientes</h1></header>
-</main>
+<section>
+  <div class="gap-0">
+    <h1 class="lh-1 fw-bold">Gestión de Clientes</h1>
+    <p class="text-clc-muted lh-1">
+      Directorio general y registro de clientes para facturación en tienda
+    </p>
+  </div>
+  <div
+    class="d-flex flex-column border border-clc-muted rounded shadow-sm bg-clc-body"
+  >
+  <div class="d-flex align-items-center justify-content-between m-4">
+    <form
+      action="#"
+      method="get"
+      attr="data-input"
+      class="align-items-center d-flex w-50"
+    >
+      <svg
+        class="z-1 position-absolute rounded m-1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#64748b"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+        <path d="M21 21l-6 -6" />
+      </svg>
+      <input
+        class="px-4 p-2 rounded border small border-clc-medium bg-clc-muted text-clc-muted input-custom"
+        attr="data-input"
+        type="text"
+        name="search"
+        placeholder="Buscar cliente por cedula o nombre..."
+      />
+    </form>
+    <button class="button-custom border-0 shadow-sm rounded-1 text-wrap small p-2 px-4">+ Nuevo Cliente</button>
+  </div>
+    <table
+      class="align-items-center table table-striped table-hover shadow-sm border bg-clc-surface"
+    >
+      <thead class="text-uppercase">
+        <tr>
+          <th>Cédula</th>
+          <th>Nombre Completo</th>
+          <th>Teléfono</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>123456789</td>
+          <td class="fw-bold">Juan Pérez</td>
+          <td>555-1234</td>
+          <td><a href="#" class="btn btn-primary">Editar</a></td>
+        </tr>
+        <tr>
+          <td>987654321</td>
+          <td class="fw-bold">María Gómez</td>
+          <td>555-5678</td>
+          <td><a href="#" class="btn btn-primary">Editar</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="d-flex justify-content-center align-items-center m-4">
+      <span>Mostrando <strong>5</strong> de <strong>125</strong> clientes registrados</span>
+      <div class="pagination">
+        <a href="#" class="btn btn-outline-primary">Anterior</a>
+        <a href="#" class="btn btn-outline-primary">1</a>
+        <a href="#" class="btn btn-outline-primary">2</a>
+        <a href="#" class="btn btn-outline-primary">Siguiente</a>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}

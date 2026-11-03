@@ -34,6 +34,7 @@
   /* --- 5. Mapeo Directo a Variables Nativas de Bootstrap 5 --- */
   --bs-primary: var(--clc-color-primary);
   --bs-success: var(--clc-color-action);
+  --bs-success-hover: var(--clc-color-action-hover);
   --bs-danger: var(--clc-color-alert);
   --bs-body-font-family: var(--clc-font-family);
   --bs-body-color: var(--clc-text-primary);
@@ -42,6 +43,7 @@
   --bs-secondary-color: var(--clc-text-muted);
   --bs-secondary-color-light: var(--clc-text-muted-light);
   --bs-border-color: var(--clc-border-subtle);
+  --bs-boder-medium: var(--clc-border-medium);
 
   --bs-text-primary: var(var(--clc-text-primary));
   --bs-text-inverse: var(var(--clc-text-inverse));
@@ -65,7 +67,7 @@
 }
 
 .text-clc-muted {
-  color: var(--bs-secondary-color);
+  color: var(--clc-text-muted);
 }
 
 .text-clc-muted-light {
@@ -74,6 +76,10 @@
 
 .text-clc-surface {
   color: var(--clc-bg-surface);
+}
+
+.bg-clc-surface {
+  background-color: var(--clc-bg-surface);
 }
 
 .bg-clc-primary {
@@ -94,4 +100,22 @@
 
 .text-clc-success {
   color: var(--bs-success);
+}
+
+.bg-clc-medium {
+  background-color: var(--clc-border-medium);
+}
+
+.border-clc-medium {
+  border-width: 1px;
+  border-color: var(--clc-border-medium);
+}
+
+.border-clc-muted {
+  border-width: 1px;
+  border-color: var(--bs-secondary-color);
+}
+
+.bg-clc-body {
+  background-color: var(--bs-body-bg);
 }

@@ -1,4 +1,4 @@
-body {
+.custom-body {
   font-family: var(--bs-body-font-family);
   background: var(--bs-body-bg);
 }
@@ -14,10 +14,14 @@ main > div {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   transition: all 0.2s ease-in-out;
+  width: 500px;
+  height: 120px;
 }
 
 .anchor-custom:hover {
   background-color: var(--bs-secondary-bg);
+  border-color: var(--bs-secondary-border);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   transform: scale(1.02);
 }
 
@@ -29,4 +33,24 @@ main > div {
 .anchor-custom[data-color="action"] {
   border-color: var(--bs-border-color) var(--bs-border-color)
     var(--bs-border-color) var(--bs-success);
+}
+
+/* Clases para página Clientes  */
+
+table > thead {
+  letter-spacing: 0.5px;
+}
+
+.input-custom[attr="data-input"] {
+  width: 80%;
+}
+
+.button-custom {
+  background-color: var(--bs-success);
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+.button-custom:hover {
+  background-color: var(--bs-success-hover);;
 }

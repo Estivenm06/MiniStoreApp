@@ -3,4 +3,23 @@ footer {
   border-color: var(--bs-border-color);
   border-top: 1px solid var(--bs-border-color);
   color: var(--bs-body-color);
+  div {
+    width:100%;
+  }
+  a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media(min-width: 768px) {
+  footer {
+    div {
+      width: auto;
+      gap: 1rem;
+    }
+    a {
+      width: auto;
+    }
+  }
 }

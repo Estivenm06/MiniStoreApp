@@ -18,10 +18,11 @@
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>Tienda La Comercial - Dashboard</title>
   </head>
-  <body class="d-flex flex-column min-vh-100 bg-custom-body">
+  <body class="d-flex flex-column min-vh-100 custom-body">
     <header class="bg-custom-primary text-clc-surface py-sm-3 shadow-md p-2">
       <div class="container-fluid">
-        <div class="row align-items-center gx-0 gy-2 gap-2">
+        <div class="row">
+
           <!-- La Comercial Icon -->
           <div
             class="col-7 col-lg-3 d-flex justify-content-between align-items-center gap-2 mb-0"
@@ -29,13 +30,13 @@
             <div class="d-flex align-items-center gap-2">
               <a href="/" class="d-flex text-decoration-none gap-2">
                 <svg
-                  class="p-2"
+                  class="bg-clc-success rounded p-1"
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#7cb342"
+                  stroke="#fff"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -51,9 +52,9 @@
                 </svg>
                 <div class="d-flex flex-column justify-content-center">
                   <h1
-                    class="text-uppercase fw-bold fs-6 lh-1 mb-0 icon-custom text-clc-surface"
+                    class="text-uppercase fw-bold fs-6 lh-1 mb-0 text-clc-surface"
                   >
-                    La Comercial
+                    Comercial La Central
                   </h1>
                   <p
                     class="text-clc-muted mb-0 text-capitalize fs-6 lh-1 d-inline d-md-none"
@@ -77,103 +78,90 @@
             <div class="d-none d-lg-inline vr align-items-end"></div>
           </div>
 
-          <!-- Separador de cuadricula Horizontal -->
-          <div class="col-12 order-2 d-inline d-md-none">
-            <hr class="border-2 text-custom-border" />
-          </div>
-
-          <!-- Sistema de Ventas e Inventario Pantalla Pequeña -->
+          <!-- Sistema de Ventas e Inventario -->
           <div
-            class="col-8 d-flex flex-column align-items-start order-3 d-md-none d-inline mt-0"
+            class="col-8 col-lg-4 order-3 d-flex flex-column align-items-center d-none d-md-inline mt-0"
           >
-            <h3 class="fw-bold fs-6 mb-0 lh-1">Ana Torres</h3>
-            <small class="text-clc-muted mb-0 lh-1">Sucursal Valledupar</small>
+            <h1 class="fw-bold text-uppercase mb-0 lh-1 fs-5">Sistema de Ventas e Inventario</h1>
+            <p class="text-clc-muted mb-0 lh-1 fs-6">Menú Principal (Dashboard)</>
           </div>
 
-          <!-- Sistema de Ventas e Inventario Pantalla Grande -->
-          <div
-            class="header-system col-8 col-lg-4 order-3 d-flex flex-column align-items-center d-none d-lg-flex"
-          >
-            <h1 class="fw-bold mb-0 lh-1">Sistema de Ventas e Inventario</h1>
-            <p class="text-clc-muted mb-0 lh-1">Menú Principal (Dashboard)</p>
-          </div>
-
-          <!-- Información del Usuario O Vendedor -->
-          <div class="col-auto ms-auto d-flex align-items-center order-lg-3">
-            <p
-              class="d-inline-flex align-items-center mb-0 fs-6 border border-clc-muted rounded px-2 py-1 gap-1"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                <path d="M9 10a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path
-                  d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
-                />
-              </svg>
-              <span class="fw-bold">Ana Torres</span>
-            </p>
-          </div>
-
-          <!-- Botón de Cerrar Sesión -->
-          <div class="col-auto ms-auto ms-md-0 order-3">
-            <a
-              class="btn-custom-action d-inline-flex align-items-center gap-1"
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="17"
-                height="17"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-logout"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
-                />
-                <path d="M9 12h12l-3 -3" />
-                <path d="M18 15l3 -3" />
-              </svg>
-              <span class="d-inline d-md-none text-capitalize fw-bold"
-                >salir</span
-              >
-              <span
-                class="d-none d-md-inline text-custom-primary text-uppercase fw-bold"
-              >
-                cerrar sesión
-              </span>
-            </a>
-          </div>
+          <nav class="col-auto ms-auto d-flex flex-column flex-md-row align-items-end gap-1 gap-md-2 gap-lg-3 order-md-2 order-lg-3">
+              <!-- Información del Usuario O Vendedor -->
+                <p
+                  class="d-inline-flex align-items-center mb-0 fs-6 border border-clc-muted rounded px-2 py-1 gap-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M9 10a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path
+                      d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                    />
+                  </svg>
+                  <span class="fw-bold">Ana Torres</span>
+                </p>
+    
+              <!-- Botón de Cerrar Sesión -->
+                <a
+                  class="btn-custom-action d-inline-flex align-items-center gap-1 px-2 py-1 text-decoration-none rounded"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="17"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-logout"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+                    />
+                    <path d="M9 12h12l-3 -3" />
+                    <path d="M18 15l3 -3" />
+                  </svg>
+                  <span class="d-inline d-md-none text-capitalize fw-bold"
+                    >salir</span
+                  >
+                  <span
+                    class="d-none d-md-inline text-custom-primary text-uppercase fw-bold"
+                  >
+                    cerrar sesión
+                  </span>
+                </a>
+           </nav>
         </div>
       </div>
     </header>
-    {% block content %} {% endblock %}
+    <main class="p-5">  
+      {% block content %} {% endblock %}
+    </main>
     <footer
-      class="mt-auto shadow-sm px-4 py-sm-3 d-flex align-items-center justify-content-between bg-clc-subtle flex-column flex-md-row gap-sm-2 p-3"
+      class=" mt-auto shadow-sm px-4 py-sm-3 d-flex align-items-center justify-content-between bg-clc-subtle flex-column flex-md-row gap-sm-2 p-3"
     >
-      <div class="d-flex flex-column flex-md-row gap-md-2 align-items-center">
+      <div class="d-flex flex-column flex-sm-row justify-content-sm-evenly m-2 align-items-center">
         <strong class="fw-bold">Comercial La Central</strong>&middot;<small
           class="text-bs-muted"
           >Todo para tu hogar, cerca de ti</small
         >&middot;<small class="text-bs-muted">Valledupar, Cesar</small>
       </div>
-      <a href="#" class="text-decoration-none d-flex gap-1 bg-clc-primary rounded w-sm-100 p-1 p-md-2 justify-content-center align-items-center">
+      <a href="#" class="text-decoration-none d-flex gap-1 bg-clc-primary rounded justify-content-center align-items-center">
         <svg  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>headphone-mic</title><path fill="#fff" d="M12 2C6.49 2 2 6.49 2 12v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1H4.07C4.56 7.06 7.93 4 12 4s7.44 3.06 7.93 7H18c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h2v1c0 .55-.45 1-1 1h-4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h9c1.65 0 3-1.35 3-3v-7c0-5.51-4.49-10-10-10"/></svg>
         <span class="fs-6 text-bs-primary text-center text-light fw-light "> Soporte TI</span>
         </a>
