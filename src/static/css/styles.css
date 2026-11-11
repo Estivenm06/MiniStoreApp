@@ -70,6 +70,10 @@
   color: var(--clc-text-muted);
 }
 
+.text-clc-outline {
+  color: var(--clc-text-outline);
+}
+
 .text-clc-muted-light {
   color: var(--clc-text-muted-light);
 }

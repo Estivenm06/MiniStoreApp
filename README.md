@@ -1,9 +1,17 @@
-so# MiniStoreApp
+# MiniStoreApp
 
+# ES
+Este projecto esta en fase de Desarrollo y el objetivo principal es un Gestor de Inventario de una Tienda Minorista la cual muestra la disponibilidad y el numero de productos disponible en el inventario en tiempo real.
+
+# EN
 This project it is in development phase and the main goal of this is the management of a story and shows here their stock and availability.
 
-## Installation
+## Installation - Instalación
 
+# ES
+Primero se escribiran unos comandos para crear un ambiente virtual para instalar librerias de manera virtual con pip
+
+# EN
 Craete virtual Environment and install ministoreapp with pip
 
 ```bash
@@ -15,10 +23,14 @@ Craete virtual Environment and install ministoreapp with pip
   pip install flask
 ```
 
-## Running App
+## Running App - Inicializar Aplicación
 
+# ES
+Para inicializar la aplicación, ejeccuta los siguientes comandos
+Ejecutalos desde el proyecto principal con
+
+# EN
 To run the app, run the following command
-
 Run it from the project root with
 
 ```bash
@@ -28,7 +40,7 @@ Run it from the project root with
     flask --app app run --debug
 ```
 
-# Project Structure
+# Project Structure -- Estructura del Proyecto
 
 ```
 project_minstore/
